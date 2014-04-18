@@ -3,7 +3,7 @@ Contributors: eslin87
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T452FJN25TWKG
 Tags: cookie, JRE, os, operating, system, flash, requirements, check, checker, browser, javascript
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
