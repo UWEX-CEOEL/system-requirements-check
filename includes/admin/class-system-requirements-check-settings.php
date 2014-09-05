@@ -33,6 +33,10 @@ class System_Requirements_Check_Settings {
 				'system_requirements' => array(
 					__( 'System Requirements', 'system_requirements_check' ),
 					array(
+					    array(
+							'name'		=> 'windows_xp',
+							'std'		=> '0'
+						),
 						array(
 							'name'		=> 'windows_vista',
 							'std'		=> '1'
@@ -136,15 +140,9 @@ class System_Requirements_Check_Settings {
 			<h2>System Requirements Check</h2>
 			
 			<div class="src-wrap">
-			
+			    
 				<?php include_once(sprintf("%s",'system-requirements-check-settings-form.php')); ?>
-				
-				<div class="side">
-    				<?php
-    					include_once(sprintf("%s",'system-requirements-check-settings-donation.php'));
-    					include_once(sprintf("%s",'system-requirements-check-settings-todos.php'));
-    				?>
-				</div>
+				<?php include_once(sprintf("%s",'system-requirements-check-settings-donation.php')); ?>
 				
 			</div>
 		</div>
