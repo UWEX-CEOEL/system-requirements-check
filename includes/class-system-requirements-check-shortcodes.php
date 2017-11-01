@@ -38,7 +38,7 @@ class System_Requirements_Check_Shortcode {
      *
      */
     public function check_system_requirements() {
-
+	wp_enqueue_style('system-requirements-check-frontend');
         $osCallout = $this->checkOS();
         $browserCallout = $this->checkBrowser();
         $jsCallout = $this->checkJS();
@@ -454,7 +454,7 @@ class System_Requirements_Check_Shortcode {
         wp_deregister_script('jquery');
         wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, null);
         wp_enqueue_script('jquery');
-        wp_enqueue_style('system-requirements-check-frontend', '' . SYSTEM_REQ_URL . '/assets/css/system-requirements-check-frontend.css');
+        wp_register_style('system-requirements-check-frontend', '' . SYSTEM_REQ_URL . '/assets/css/system-requirements-check-frontend.css');
 
     }
 
